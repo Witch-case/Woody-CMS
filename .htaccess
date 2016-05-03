@@ -1,0 +1,15 @@
+
+DirectoryIndex index.php
+
+AddType x-mapp-php5 .php
+
+RewriteEngine On
+RewriteRule ^sites/[^/]+/design+/(css|images|js?)/.* - [L]
+RewriteRule [^/]+sites/[^/]+/design+/(css|images|js?)/.* - [L]
+RewriteRule ^files/.* - [L]
+
+RewriteRule ^favicon\.ico - [L]
+RewriteRule ^robots\.txt - [L]
+RewriteRule ^w3c/p3p\.xml - [L]
+
+RewriteRule .* index\.php
