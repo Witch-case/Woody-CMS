@@ -563,10 +563,7 @@ CREATE TABLE IF NOT EXISTS `police` (
 
 INSERT INTO `police` (`id`, `fk_profile`, `module`, `action`, `position`, `inherit_subtree`, `rigths_limitation`, `group_fk_profile`) VALUES
 (1, 1, '*', '*', '*', 1, 'all', 0),
-(2, 2, 'view', 'content', '6', 1, 'all', 2),
-(3, 2, 'view', '*', '14,*', 1, 'all', 2),
-(4, 2, 'view', '*', '16,*', 1, 'all', 2),
-(5, 2, 'contact', '*', '16,*', 1, 'all', 0);
+(6, 2, 'view', '*', '19,*', 1, 'all', 0);
 
 -- --------------------------------------------------------
 
